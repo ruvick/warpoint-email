@@ -151,7 +151,8 @@
 								<m-column valign="middle">
 									<m-text color="#C7CCCC" font-size="18px" regular line-height="41.6px">
 										4 500 ₽ <span regular color="#616161"
-											style="text-decoration: line-through #616161; color:#616161;">5 000
+											style="text-decoration: line-through #616161; color:#616161; white-space: nowrap;">5
+											000
 											₽</span>
 									</m-text>
 								</m-column>
@@ -177,7 +178,8 @@
 								</m-column>
 								<m-column padding="0 16px 0px 0"></m-column>
 								<m-column align="left" valign="middle">
-									<m-text color="#C7CCCC" font-size="18px" regular line-height="41.6px">
+									<m-text color="#C7CCCC" font-size="18px" regular line-height="41.6px"
+										style="white-space: nowrap;">
 										3 500 ₽
 									</m-text>
 								</m-column>
@@ -279,7 +281,7 @@
 					<m-padding size="10"></m-padding>
 
 					<m-list>
-						<ul style="font-family: Inter, Arial, sans-serif; padding: 0 0 0 20px;">
+						<ul class="custom-list" style="font-family: Inter, Arial, sans-serif; padding: 0 0 0 20px;">
 							<li
 								style="color: #ECECEE; font-size: 16; line-height: 19.36px; font-weight: 400; padding: 0 0 16px 0;">
 								Мы рекомендуем приходить минимум за 20 минут до начала игрового сеанса, чтобы вы успели
@@ -317,6 +319,26 @@
 					<m-text font-size="16px" regular line-height="19.36px" color="#ECECEE">
 						Если у вас есть вопросы о вашем бронировании, пожалуйста, свяжитесь с нами.
 					</m-text>
+
+					<m-style>
+						ul.custom-list {
+						list-style-type: none;
+						}
+
+						ul.custom-list li {
+						position: relative;
+						}
+
+						ul.custom-list li::before {
+						content: '•';
+						position: absolute;
+						top: -5px;
+						left: -20px;
+						color: #3970F6;
+						font-size: 26px;
+						line-height: 1;
+						}
+					</m-style>
 
 				</m-wrap>
 
