@@ -1,96 +1,355 @@
-<div id="app">
-	<tj-ui>
-		<m-body bgcolor="#161616" color="#fff" font-family="Inter, Arial, sans-serif">
-			<m-head
-				preheader="Здесь пишем текст, который отображается рядом с темой в списке входящих до открытия в почтовике"></m-head>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+	xmlns:o="urn:schemas-microsoft-com:office:office">
 
-			<!-- Тело письма -->
-			<m-wrap width="700" padding="30px 25px">
+<head>
+	<!--[if gte mso 9]>
+	<xml>
+	<o:OfficeDocumentSettings>
+	<o:AllowPNG/>
+	<o:PixelsPerInch>96</o:PixelsPerInch>
+	</o:OfficeDocumentSettings>
+	</xml>
+	<![endif]-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="x-apple-disable-message-reformatting">
+	<title></title>
+	<style>
+		html {
+			-webkit-text-size-adjust: none;
+			-ms-text-size-adjust: none
+		}
 
-				<!-- Header  -->
-				<m-wrap width="100%" padding="0 0 20px 0">
-					<m-row>
-						<m-img src="img/logo.png" width="240" height="33" alt="Logo"></m-img>
-					</m-row>
-				</m-wrap>
+		.only_mob {
+			display: none !important
+		}
 
-				<m-wrap width="100%" padding="20px 0 4px 0">
-					<m-row>
-						<m-text color="#3970F6" font-size="28px" bold line-height="36.4px">
-							Спасибо, что посетили WARPOINT!
-						</m-text>
-					</m-row>
-				</m-wrap>
+		@media only screen and (max-device-width:600px),
+		only screen and (max-width:600px) {
+			.mob_100 {
+				width: 100% !important;
+				max-width: 100% !important
+			}
 
-				<m-wrap width="100%" padding="4px 0 25px 0">
-					<m-row>
-						<m-text color="#ECECEE" font-size="28px" bold line-height="36.4px">
-							Пожалуйста, оцените <br>
-							качество обслуживания
-						</m-text>
-					</m-row>
-				</m-wrap>
+			.mob_full {
+				width: auto !important;
+				display: block !important;
+				padding: 0 10px !important
+			}
 
-				<m-wrap width="100%" padding="25px 0 20px 0">
-					<m-row>
-						<m-img src="img/banner-2.png" width="297" height="203" alt="banner"></m-img>
-					</m-row>
-				</m-wrap>
+			.mob_center {
+				text-align: center !important
+			}
 
-				<m-wrap width="100%" padding="20px 0">
-					<m-row>
-						<m-text color="#ECECEE" font-size="16px" regular line-height="19.36px">
-							Мы ценим ваш выбор и надеемся на дальнейшую дружбу!
-						</m-text>
-					</m-row>
-				</m-wrap>
+			.mob_center_bl {
+				margin-left: auto;
+				margin-right: auto
+			}
 
-				<m-wrap width="100%" padding="20px 0">
-					<m-row>
-						<m-text color="#ECECEE" font-size="16px" regular line-height="19.36px">
-							Будем признательны, если вы оцените качество обслуживания
-							и поделитесь своими впечатлениями о посещении WARPOINT
-							по адресу Екатеринбург, ул. Малышева, 5 (20.10.2024 с 14:00 до 15:00)
-						</m-text>
-					</m-row>
-				</m-wrap>
+			.mob_hidden {
+				display: none !important
+			}
 
-				<m-wrap width="100%" padding="20px 0">
-					<m-box width="400">
-						<m-button color="#fff" font-size="18px" line-height="21.09px" bold border-radius="4px"
-							bgcolor="#44A248" width="100%" height="56">ОЦЕНИТЬ</m-button>
-					</m-box>
-				</m-wrap>
+			.only_mob {
+				display: block !important
+			}
 
-				<m-wrap width="100%" padding="20px 0 10px 0">
-					<m-row>
-						<m-text color="#3970F6" font-size="24px" bold line-height="31.2px">
-							Будем ждать вас снова!
-						</m-text>
-					</m-row>
-				</m-wrap>
+			table.only_mob {
+				display: table !important
+			}
+		}
 
-				<m-wrap width="100%" padding="10px 0 40px 0">
-					<m-row>
-						<m-img src="img/logo-f.png" width="200" height="27" alt="Logo"></m-img>
-					</m-row>
-				</m-wrap>
+		@media only screen and (max-width:600px) {
+			.mob_100 {
+				width: 100% !important;
+				max-width: 100% !important
+			}
 
-				<m-wrap width="100%" padding="40px 0 10px 0" style="border-top: 1px solid #25272D;">
-					<m-row>
-						<m-text color="#777777" font-size="12px" regular line-height="14.52px">
-							Если вы не хотите получать подобные письма, вы можете отписаться от рассылки <br>
-							© 2020-2024. WARPOINT. Все права защищены.
-						</m-text>
-					</m-row>
-				</m-wrap>
+			.mob_100 img,
+			.mob_100 table {
+				max-width: 100% !important
+			}
 
-			</m-wrap>
-			<!-- Тело письма Emd -->
+			.mob_full {
+				width: auto !important;
+				display: block !important;
+				padding: 0 10px !important
+			}
 
-		</m-body>
-	</tj-ui>
-</div>
+			.mob_center {
+				text-align: center !important
+			}
 
-<script
-	type="text/javascript">var s = document.createElement("script"), l = document.createElement("link"), d = new Date; s.setAttribute("src", "https://ampier.ru/tjml/app.js?ver=" + d.getTime()), l.setAttribute("type", "text/css"), l.setAttribute("rel", "stylesheet"), l.setAttribute("href", "https://ampier.ru/tjml/app.css?ver=" + d.getTime()), document.head.appendChild(l), document.body.appendChild(s);</script>
+			.mob_center_bl {
+				margin-left: auto;
+				margin-right: auto
+			}
+
+			.mob_hidden {
+				display: none !important
+			}
+
+			.only_mob {
+				display: block !important
+			}
+
+			table.only_mob {
+				display: table !important
+			}
+		}
+
+		.creative {
+			width: 100% !important;
+			max-width: 100% !important
+		}
+
+		.mail_preheader {
+			display: none !important
+		}
+	</style>
+	<!--[if (gte mso 9)|(IE)]>
+	<style type="text/css">table {border-collapse: collapse !important;}.outf14{font-size:14px !important;}    .not_for_outlook, .not_for_outlook table,.only_mob, .only_mob table{mso-hide: all !important;display: none !important;font-size:0;max-height:0;line-height: 0;mso-hide: all;}.outpadding{padding-left: 0 !important;padding-right: 0 !important;}</style>
+	<![endif]-->
+</head>
+
+<body class="body" style="padding:0;margin:0">
+	<div class="full-wrap">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="full-wrap">
+			<tr>
+				<td align="center" bgcolor="#161616" style="line-height: normal; hyphens: none;">
+					<div>
+						<!--[if !mso]>
+	<!-->
+						<div class="mail_preheader" style="font-size: 0px; color: transparent; opacity: 0;">
+							<span
+								style="font-family: Arial, Helvetica, sans-serif; font-size: 0px; color: transparent; line-height: 0px;">Здесь
+								пишем текст, который отображается рядом с темой в списке входящих до открытия в почтовике</span>
+						</div>
+						<!--
+	<![endif]-->
+					</div>
+					<div>
+						<!--[if (gte mso 9)|(IE)]>
+	<table width="700" border="0" cellspacing="0" cellpadding="0" style="width: 700px;">
+	<tr><td>
+	<![endif]-->
+						<table border="0" cellspacing="0" cellpadding="0" width="100%" style="max-width: 700px;">
+							<tr>
+								<td align="center" style="padding: 30px 25px;">
+									<div>
+										<div>
+											<table border="0" cellspacing="0" cellpadding="0" width="100%">
+												<tr>
+													<td align="center" style="padding: 0px 0px 20px;">
+														<div>
+															<table border="0" cellspacing="0" cellpadding="0">
+																<tr><span
+																		style="font-family: Inter, Arial, sans-serif; font-size: 14px; color: #ffffff;"><img
+																			src="img/logo.png" width="240" height="33" alt="Logo"
+																			border="0" style="display: block;"></span></tr>
+															</table>
+														</div>
+													</td>
+												</tr>
+											</table>
+										</div>
+										<div>
+											<table border="0" cellspacing="0" cellpadding="0" width="100%">
+												<tr>
+													<td align="center" style="padding: 20px 0px 4px;">
+														<div>
+															<table border="0" cellspacing="0" cellpadding="0">
+																<tr>
+																	<div style="line-height: 36.4px;">
+																		<span
+																			style="font-family: Inter, Arial, sans-serif; font-weight: bold; font-size: 28px; color: #3970f6;">Спасибо,
+																			что посетили WARPOINT!</span>
+																	</div>
+																</tr>
+															</table>
+														</div>
+													</td>
+												</tr>
+											</table>
+										</div>
+										<div>
+											<table border="0" cellspacing="0" cellpadding="0" width="100%">
+												<tr>
+													<td align="center" style="padding: 4px 0px 25px;">
+														<div>
+															<table border="0" cellspacing="0" cellpadding="0">
+																<tr>
+																	<div style="line-height: 36.4px;">
+																		<span
+																			style="font-family: Inter, Arial, sans-serif; font-weight: bold; font-size: 28px; color: #ececee;">Пожалуйста,
+																			оцените <br>качество обслуживания</span>
+																	</div>
+																</tr>
+															</table>
+														</div>
+													</td>
+												</tr>
+											</table>
+										</div>
+										<div>
+											<table border="0" cellspacing="0" cellpadding="0" width="100%">
+												<tr>
+													<td align="center" style="padding: 25px 0px 20px;">
+														<div>
+															<table border="0" cellspacing="0" cellpadding="0">
+																<tr><span
+																		style="font-family: Inter, Arial, sans-serif; font-size: 14px; color: #ffffff;"><img
+																			src="img/banner-2.png" width="297" height="203" alt="banner"
+																			border="0" style="display: block;"></span></tr>
+															</table>
+														</div>
+													</td>
+												</tr>
+											</table>
+										</div>
+										<div>
+											<table border="0" cellspacing="0" cellpadding="0" width="100%">
+												<tr>
+													<td align="center" style="padding: 20px 0px;">
+														<div>
+															<table border="0" cellspacing="0" cellpadding="0">
+																<tr>
+																	<div style="line-height: 19.36px;">
+																		<span
+																			style="font-family: Inter, Arial, sans-serif; font-size: 16px; color: #ececee;">Мы
+																			ценим ваш выбор и&nbsp;надеемся на&nbsp;дальнейшую
+																			дружбу!</span>
+																	</div>
+																</tr>
+															</table>
+														</div>
+													</td>
+												</tr>
+											</table>
+										</div>
+										<div>
+											<table border="0" cellspacing="0" cellpadding="0" width="100%">
+												<tr>
+													<td align="center" style="padding: 20px 0px;">
+														<div>
+															<table border="0" cellspacing="0" cellpadding="0">
+																<tr>
+																	<div style="line-height: 19.36px;">
+																		<span
+																			style="font-family: Inter, Arial, sans-serif; font-size: 16px; color: #ececee;">Будем
+																			признательны, если вы оцените качество
+																			обслуживанияи&nbsp;поделитесь своими впечатлениями
+																			о&nbsp;посещении WARPOINTпо&nbsp;адресу Екатеринбург, ул.
+																			Малышева, 5 (20.10.2024 с&nbsp;14:00 до&nbsp;15:00)</span>
+																	</div>
+																</tr>
+															</table>
+														</div>
+													</td>
+												</tr>
+											</table>
+										</div>
+										<div>
+											<table border="0" cellspacing="0" cellpadding="0" width="100%">
+												<tr>
+													<td align="center" style="padding: 20px 0px;">
+														<div>
+															<div style="display: inline-block; width: 100%; max-width: 400px;">
+																<table width="100%" border="0" cellspacing="0" cellpadding="0"
+																	style="border-collapse: collapse;">
+																	<tr>
+																		<td align="center" valign="top" class="outf14"
+																			style="font-size: large;">
+																			<div>
+																				<!--[if mso]>
+									<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" style="height:56px;v-text-anchor:middle;width:400px;" arcsize="7%" stroke="f" fillcolor="#44A248">
+									<w:anchorlock></w:anchorlock>
+									<center style="color: #ffffff; font-size: 18px; font-weight: bold; font-family: Inter, Arial, sans-serif;">ОЦЕНИТЬ</center>
+									</v:roundrect>
+									<![endif]-->
+																				<a target="_blank" href="#"
+																					style="background-color:#44A248;font-size:18px;font-weight:bold;line-height:56px;width:100%;color:#fff;border-radius:4px;display:inline-block;font-family:Inter, Arial, sans-serif;text-align:center;text-decoration:none;-webkit-text-size-adjust:none;box-sizing:border-box;mso-hide:all">ОЦЕНИТЬ</a>
+																			</div>
+																		</td>
+																	</tr>
+																</table>
+															</div>
+														</div>
+													</td>
+												</tr>
+											</table>
+										</div>
+										<div>
+											<table border="0" cellspacing="0" cellpadding="0" width="100%">
+												<tr>
+													<td align="center" style="padding: 20px 0px 10px;">
+														<div>
+															<table border="0" cellspacing="0" cellpadding="0">
+																<tr>
+																	<div style="line-height: 31.2px;">
+																		<span
+																			style="font-family: Inter, Arial, sans-serif; font-weight: bold; font-size: 24px; color: #3970f6;">Будем
+																			ждать вас снова!</span>
+																	</div>
+																</tr>
+															</table>
+														</div>
+													</td>
+												</tr>
+											</table>
+										</div>
+										<div>
+											<table border="0" cellspacing="0" cellpadding="0" width="100%">
+												<tr>
+													<td align="center" style="padding: 10px 0px 40px;">
+														<div>
+															<table border="0" cellspacing="0" cellpadding="0">
+																<tr><span
+																		style="font-family: Inter, Arial, sans-serif; font-size: 14px; color: #ffffff;"><img
+																			src="img/logo-f.png" width="200" height="27" alt="Logo"
+																			border="0" style="display: block;"></span></tr>
+															</table>
+														</div>
+													</td>
+												</tr>
+											</table>
+										</div>
+										<div style="border-top: 1px solid #25272d;">
+											<table border="0" cellspacing="0" cellpadding="0" width="100%">
+												<tr>
+													<td align="center" style="padding: 40px 0px 10px;">
+														<div>
+															<table border="0" cellspacing="0" cellpadding="0">
+																<tr>
+																	<div style="line-height: 14.52px;">
+																		<span
+																			style="font-family: Inter, Arial, sans-serif; font-size: 12px; color: #777777;">Если
+																			вы не&nbsp;хотите получать подобные письма, вы можете
+																			отписаться от&nbsp;рассылки <br>© 2020-2024. WARPOINT. Все
+																			права защищены.</span>
+																	</div>
+																</tr>
+															</table>
+														</div>
+													</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+						<!--[if (gte mso 9)|(IE)]>
+	</td></tr>
+	</table>
+	<![endif]-->
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+
+</html>
